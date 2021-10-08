@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='index.js'></script>
+    <title>The Movie Searcher</title>
+</head>
+
+<body>
+    <div class="main">
+                <div class="middletext" style="width: 100%;">
+                    <div class="title"><h2 class="title">The Movie Database</h2></div>
+                    <h3>Please enter a name of a movie or actor to learn more information.</h3>
+                    <div class='searchcontainer'><div id='searchform'><input type="text" id="searchbar" placeholder="Enter name of movie or actor"/><button id="searchbtn">Search</button></div></div>
+                    <form id=radio>
+                        <label for="movie">Movie</label>
+                        <input checked="true" type="radio" name='selectpersonmovie' id="movie" value="Movie">
+                        <label for="person">Person</label>
+                        <input type="radio" name='selectpersonmovie' id="person" value="Person">
+                    </form>
+                    <div>
+                        <label for="yearbox">Search movie by year:</label><input id='yearbox' type="checkbox"/>
+                        <input id="yearinput" type="text"/>
+                    </div>
+                </div>
+                <div id="results"></div>
+            </div>
+    </div> 
+    <div id="moviemodal" class="modal">
+        <div class="modal-content">
+        </div>
+    </div>
+</body>
+
+</html>
